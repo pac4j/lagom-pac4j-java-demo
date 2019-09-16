@@ -31,6 +31,7 @@ public class AuthJwtModule extends AbstractModule implements ServiceGuiceSupport
      * See <a href="http://www.pac4j.org/3.4.x/docs/clients.html">PAC4J documentation</a> for more information about PAC4J clients.
      */
     @Provides
+    @SuppressWarnings("unchecked")
     protected HeaderClient provideHeaderJwtClient(com.typesafe.config.Config configuration) throws ParseException, JOSEException {
         HeaderClient headerClient = new HeaderClient();
         headerClient.setHeaderName(AUTHORIZATION_HEADER);
