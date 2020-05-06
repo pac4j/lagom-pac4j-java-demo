@@ -17,7 +17,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <scala.binary.version>2.12</scala.binary.version>
     <lagom.version>1.5.5</lagom.version>
-    <pac4j.version>3.8.3</pac4j.version>
+    <pac4j.version>4.0.0</pac4j.version>
     <lagom.pac4j.version>2.0.0</lagom.pac4j.version>
     <junit.jupiter.version>5.6.0</junit.jupiter.version>
   </properties>
