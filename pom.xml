@@ -19,7 +19,7 @@
     <lagom.version>1.6.5</lagom.version>
     <pac4j.version>3.9.0</pac4j.version>
     <lagom.pac4j.version>2.2.1</lagom.pac4j.version>
-    <junit.jupiter.version>5.7.1</junit.jupiter.version>
+    <junit.jupiter.version>5.7.2</junit.jupiter.version>
   </properties>
 
   <build>
