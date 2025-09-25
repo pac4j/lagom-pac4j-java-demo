@@ -9,6 +9,7 @@ import org.pac4j.core.config.Config;
 import org.pac4j.http.client.direct.HeaderClient;
 import org.pac4j.lagom.jwt.JwtAuthenticatorHelper;
 
+import java.net.MalformedURLException;
 import java.text.ParseException;
 import java.util.Collection;
 
@@ -32,7 +33,7 @@ public class AuthJwtModule extends AbstractModule implements ServiceGuiceSupport
      */
     @Provides
     @SuppressWarnings("unchecked")
-    protected HeaderClient provideHeaderJwtClient(com.typesafe.config.Config configuration) throws ParseException, JOSEException {
+    protected HeaderClient provideHeaderJwtClient(com.typesafe.config.Config configuration) throws ParseException, JOSEException, MalformedURLException {
         HeaderClient headerClient = new HeaderClient();
         headerClient.setHeaderName(AUTHORIZATION_HEADER);
         headerClient.setPrefixHeader(BEARER_HEADER_PREFIX);
